@@ -163,6 +163,36 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
                 .response
         )
 
+#########################################################################################
+#########################################################################################
+################################### CUSTOM INTENT HANDLERS ##############################
+#########################################################################################
+#########################################################################################
+
+class AboutVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " Voicer Parteva is a codename for Voicer KTU. I speak on behalf of Koforidua Technical University"
+        " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
+        " I was created by the Triple C group as a project for their end of HND Computer Science." 
+        " I am a smart voice assistant for KTU. I will boost the image of KTU using my AI and"
+        " Machine Learning models as a student interactive Voice assistance. "
+        " Kudos to the Triple C group who created me and their supervisor Mr. Collins Collinson"
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+
+
 # The SkillBuilder object acts as the entry point for your skill, routing all request and response
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
 # defined are included below. The order matters - they're processed top to bottom.

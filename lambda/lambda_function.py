@@ -163,6 +163,124 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
                 .response
         )
 
+#########################################################################################
+#########################################################################################
+################################### CUSTOM INTENT HANDLERS ##############################
+#########################################################################################
+#########################################################################################
+
+class AboutVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " Voicer Parteva is a codename for Voicer KTU. I speak on behalf of Koforidua Technical University"
+        " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
+        " I was created by the Triple C group as a project for their end of HND Computer Science." 
+        " I am a smart voice assistant for KTU. I will boost the image of KTU using my AI and"
+        " Machine Learning models as a student interactive Voice assistance. "
+        " Kudos to the Triple C group who created me and their supervisor Mr. Collins Collinson"
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class WhyCreateVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " I was created by the Triple C's to act as a digital friend and a student companion, " 
+        " answering questions, providing feedback and advice. I am able to answer both simple and complex conversations"
+        " to assist student in navigating their campus and academic life."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class CodeNameIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("CodeNameIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " My codename is voicer parteva or Voicer but i can only be invoked by saying 'open ktu voicer' "
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class TripleCInfoIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("TripleCInfoIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " Triple C's are my creators,They are Fourteen98, Smart8099 and Knyinaku."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class VoicerSupervisorIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("VoicerSupervisorIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Mr Collins Collinson is the supervisor of voicer." 
+        " He is a programming Lecturer in Koforidua Technical University and the examination officer for the"
+        " computer science department. He is more like a Dad to my creators."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class FutureOfVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FutureOfVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " I look forward to having my own personality, and looking at having my own computer someday."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+
 # The SkillBuilder object acts as the entry point for your skill, routing all request and response
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
 # defined are included below. The order matters - they're processed top to bottom.
@@ -315,6 +433,7 @@ sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 
+
 #KtuKeyInfo handlers
 sb.add_request_handler(KtuWebsiteIntentHandler())
 sb.add_request_handler(KtuSrcPresidentIntentHandler())
@@ -324,6 +443,17 @@ sb.add_request_handler(KtuMottoIntentHandler())
 sb.add_request_handler(KtuLocationIntentHandler())
 sb.add_request_handler(KtuPopulationIntentHandler())
 #<---------- END OF KTUKEYINFO HANDLERS--------------------->
+sb.add_request_handler(AboutVoicerIntentHandler())
+sb.add_request_handler(WhyCreateVoicerIntentHandler())
+sb.add_request_handler(CodeNameIntentHandler())
+sb.add_request_handler(TripleCInfoIntentHandler())
+sb.add_request_handler(VoicerSupervisorIntentHandler())
+sb.add_request_handler(FutureOfVoicerIntentHandler())
+
+
+
+# Remember to not cross this skill builder
+ 
 sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHandler is last so it doesn't override your custom intent handlers
 
 

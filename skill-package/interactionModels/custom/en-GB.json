@@ -153,6 +153,79 @@
           ]
         },
 
+=======
+          "name": "AboutVoicerIntent",
+          "slots": [],
+          "samples": [
+            "what is voicer ",
+            "what is voicer parteva ",
+            "which students created voicer ",
+            "who created voicer parteva ",
+            "who are the creators of voicer parteva"
+          ]
+        },
+        {
+          "name": "WhyCreateVoicerIntent",
+          "slots": [],
+          "samples": [
+            "what is the use of voicer parteva",
+            "why was voicer parteva you created",
+            "what can voicer parteva  do",
+            "how can voicer parteva help me",
+            "how smart is voicer parteva"
+          ]
+        },
+        {
+          "name": "CodeNameIntent",
+          "slots": [],
+          "samples": [
+            "What is your codename",
+            "Do you have a codename",
+            "Can you tell me your codename",
+            "Tell me your codename",
+            "codename"
+          ]
+        },
+        {
+          "name": "VoicerSupervisorIntent",
+          "slots": [],
+          "samples": [
+            "Who supervised the creation of voicer",
+            "who is the supervisor of voicer", 
+            "who supervised the development of voicer",
+            "who is the supervisor of voicer"
+          ]
+
+        },
+        {
+          "name": "TripleCInfoIntent", 
+          "slots": [],
+          "samples": [
+            "Who is your creator",
+            "Who are your creator",
+            "Who created you",
+            "who created voicer", 
+            "Who created ktu voicer", 
+            "Who are the Triple C's",
+            "Who are the Triple C",
+            "Who is the Triple C's",
+            "Who is the Triple C"
+
+
+          ]
+        },
+        {
+          "name": "FutureOfVoicerIntent",
+          "slots": [],
+          "samples": [
+            "Where do you see yourself some days to come Voicer",
+            "Where will voicer be some days to",
+            "Where will you be some years to come",
+            "Where will you be in some few years "
+          ]
+
+        },
+
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

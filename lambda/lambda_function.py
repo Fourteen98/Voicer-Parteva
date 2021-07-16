@@ -179,7 +179,33 @@ class AboutKtuIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Hello World!"
+        speak_output = "koforidua technical university is one of the ten Technical Universities"
+        "established in every region in Ghana. It was founded in 1997." 
+        "Since 1999 it has produced graduates with HND in accountancy,"
+        "(secretaryship and management studies), marketing, purchasing and supply, statistics and computer science. "
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+
+class AboutVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Voicer Parteva is a codename for Voicer KTU. I speak on behalf of KTU that is why I am called Voicer,"
+        " but for Parteva it is a codename used by creators.  I was created by the Triple C group as a" 
+        " project for end of HND Computer Science. I am a smart voice assistant for KTU. I will" 
+        " boost the image of KTU using my AI and Machine Learning models as a student interactive" 
+        " virtual assistance. Kudos to the Triple C group who created me and their supervisor"
+        " Mr. Collins Collinson"
 
         return (
             handler_input.response_builder
@@ -203,6 +229,8 @@ sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_request_handler(AboutKtuIntentHandler())
+sb.add_request_handler(AboutVoicerIntentHandler())
+
 sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHandler is last so it doesn't override your custom intent handlers
 
 sb.add_exception_handler(CatchAllExceptionHandler())

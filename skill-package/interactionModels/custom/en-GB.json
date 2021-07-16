@@ -49,6 +49,17 @@
           ]
         },
         {
+          "name": "AboutVoicerPartevaIntent",
+          "slots": [],
+          "samples": [
+            "what is voicer ",
+            "what is voicer parteva ",
+            "which students created voicer ",
+            "who created voicer parteva ",
+            "who are the creators of voicer parteva"
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

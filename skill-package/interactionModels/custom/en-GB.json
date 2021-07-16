@@ -110,6 +110,20 @@
             "who owns ktu"
           ]
         },
+
+        {
+          "name": "KtuMottoIntent",
+          "slots": [],
+          "samples": [
+            "what is the motto of Ktu",
+            "ktu motto",
+            "motto of Koforidua technical university",
+            "motto of koforidua poly",
+            "what is the motto of Koforidua technical univerity",
+            "what is the motto of Koforidua Polythecnic ",
+            "does ktu have a motto"
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

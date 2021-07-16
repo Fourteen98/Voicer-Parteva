@@ -66,6 +66,23 @@
           ]
         },
         {
+          "name": "TripleCInfoIntent", 
+          "slots": [],
+          "samples": [
+            "Who is your creator",
+            "Who are your creator",
+            "Who created you",
+            "who created voicer", 
+            "Who created ktu voicer", 
+            "Who are the Triple C's",
+            "Who are the Triple C",
+            "Who is the Triple C's",
+            "Who is the Triple C"
+
+
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

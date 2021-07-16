@@ -227,6 +227,22 @@ class CodeNameIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+class TripleCInfoIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("TripleCInfoIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " Triple C's are my creators,They are Fourteen98, Smart8099 and Knyinaku."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
 
 
 
@@ -246,6 +262,7 @@ sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_request_handler(AboutVoicerIntentHandler())
 sb.add_request_handler(WhyCreateVoicerIntentHandler())
 sb.add_request_handler(CodeNameIntentHandler())
+sb.add_request_handler(TripleCInfoIntentHandler())
 
 
 

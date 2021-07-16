@@ -189,6 +189,28 @@ class KtuSrcPresidentIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+#KtuViceChancellorhandler code
+class KtuViceChancellorIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuViceChancellorIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Professor David Kofi Essumang is the current vice chancellor of KTU. Prof. Essumang holds a Doctor of Philosophy (PhD) in"
+        " Environmental Chemistry from the Aalborg University of Denmark and a Master of Philosophy (M. Phil) in Chemistry, "
+        " as well as B.Sc in Chemistry and Diploma in Education from the University of Cape Coast. He had his secondary school"
+        " education at Agona Nsaba Presbyterian Secondary School and St. Augustine’s College, Cape Coast for the ‘O’ and ‘A’ "
+        " Level Certificates respectively."
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
 
 
 sb = SkillBuilder()

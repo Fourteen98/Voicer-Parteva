@@ -56,6 +56,23 @@
           ]
         },
         {
+          "name": "KtuViceChancellorIntent",
+          "slots": [],
+          "samples": [
+            "who is the vice chancellor of ktu",
+            "vice chancellor of ktu",
+            "ktu vice chancellor",
+            "does ktu have a vice chancellor",
+            "Prof David Kofi Essumang",
+            "vice chancellor of Koforida Technical Univesity",
+            "vice chancellor of koforidua poly",
+            "who is the vc",
+            "what is the name of ktu vc",
+            "what is the name of ktu vice chancellor",
+            "tell me about the vc of ktu"
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

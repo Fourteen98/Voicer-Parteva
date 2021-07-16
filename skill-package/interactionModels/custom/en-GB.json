@@ -72,6 +72,24 @@
             "tell me about the vc of ktu"
           ]
         },
+
+        {
+          "name": "KtuWebsiteIntent",
+          "slots": [],
+          "samples": [
+            "what is the website of ktu",
+            "what is the website of Koforidua Technical University",
+            "ktu website",
+            "does ktu have a website",
+            "website of ktu",
+            "website of koforidua technical university",
+            "website of koforidua poly",
+            "koforidua poly website",
+            "how can i contact ktu",
+            "what is the url of ktu",
+            "ktu is the main website of Ktu"
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

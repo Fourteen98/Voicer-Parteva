@@ -212,6 +212,25 @@ class KtuViceChancellorIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+#KtuWebsiteHandler code
+class KtuWebsiteIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuWebsiteIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "the website of ktu is www.ktu.edu.gh"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
 
 sb = SkillBuilder()
 
@@ -222,6 +241,11 @@ sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHandler is last so it doesn't override your custom intent handlers
+
+#KtuKeyInfo handlers
+sb.add_request_handler(KtuWebsiteIntentHandler())
+sb.add_request_handler(KtuSrcPresidentIntentHandler())
+sb.add_request_handler(KtuViceChancellorIntentHandler())
 
 sb.add_exception_handler(CatchAllExceptionHandler())
 

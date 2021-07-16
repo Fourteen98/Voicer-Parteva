@@ -90,6 +90,26 @@
             "ktu is the main website of Ktu"
           ]
         },
+
+        {
+          "name": "KtuEstablishedIntent",
+          "slots": [],
+          "samples": [
+            "what is the year  ktu was founded",
+            "what is the year ktu was established",
+            "when was ktu opened",
+            "ktu establishment year",
+            "when did start operation",
+            "year ktu started ",
+            "when was ktu started",
+            "did was ktu established",
+            "when did ktu commence operation",
+            "which year was Koforidua Technical University founded",
+            "Koforidua Technical University",
+            "who built Koforidua Technical University",
+            "who owns ktu"
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

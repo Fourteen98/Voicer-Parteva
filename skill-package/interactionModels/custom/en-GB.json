@@ -124,6 +124,20 @@
             "does ktu have a motto"
           ]
         },
+
+        {
+          "name": "KtuLocationIntent",
+          "slots": [],
+          "samples": [
+            "where is Koforidua Technical University",
+            "which region is Koforidua Technical University",
+            "ktu location",
+            "what is the location of koforidua technical university",
+            "where is ktu located",
+            "what is the location of Koforidua Polythecnic ",
+            "where of Koforidua Polythecnic "
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

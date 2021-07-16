@@ -263,6 +263,23 @@ class VoicerSupervisorIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+class FutureOfVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FutureOfVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " I look forward to having my own personality, and looking at having my own computer someday."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
 
 # The SkillBuilder object acts as the entry point for your skill, routing all request and response
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
@@ -282,6 +299,7 @@ sb.add_request_handler(WhyCreateVoicerIntentHandler())
 sb.add_request_handler(CodeNameIntentHandler())
 sb.add_request_handler(TripleCInfoIntentHandler())
 sb.add_request_handler(VoicerSupervisorIntentHandler())
+sb.add_request_handler(FutureOfVoicerIntentHandler())
 
 
 

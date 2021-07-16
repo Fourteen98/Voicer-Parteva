@@ -94,6 +94,17 @@
           ]
         },
         {
+          "name": "FutureOfVoicerIntent",
+          "slots": [],
+          "samples": [
+            "Where do you see yourself some days to come Voicer",
+            "Where will voicer be some days to",
+            "Where will you be some years to come",
+            "Where will you be in some few years "
+          ]
+
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

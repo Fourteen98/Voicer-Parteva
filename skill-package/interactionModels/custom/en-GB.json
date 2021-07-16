@@ -138,6 +138,21 @@
             "where of Koforidua Polythecnic "
           ]
         },
+
+        {
+          "name": "KtuPopulationIntent",
+          "slots": [],
+          "samples": [
+            "what is the student population of Koforidua Technical University",
+            "what is the  of Koforidua Technical University",
+            "student population of ktu",
+            "how many studets  are in ktu",
+            "are the student in ktu",
+            "what is student population of Koforidua Polythecnic ",
+            "student population of ktu"
+          ]
+        },
+
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

@@ -66,6 +66,17 @@
           ]
         },
         {
+          "name": "VoicerSupervisorIntent",
+          "slots": [],
+          "samples": [
+            "Who supervised the creation of voicer",
+            "who is the supervisor of voicer", 
+            "who supervised the development of voicer",
+            "who is the supervisor of voicer"
+          ]
+
+        },
+        {
           "name": "TripleCInfoIntent", 
           "slots": [],
           "samples": [

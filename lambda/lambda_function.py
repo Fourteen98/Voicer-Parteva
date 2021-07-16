@@ -244,6 +244,24 @@ class TripleCInfoIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+class VoicerSupervisorIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("VoicerSupervisorIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Mr Collins Collinson is the supervisor of voicer." 
+        " He is a programming Lecturer in Koforidua Technical University and the examination officer for the"
+        " computer science department. He is more like a Dad to my creators."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
 
 
 # The SkillBuilder object acts as the entry point for your skill, routing all request and response
@@ -263,6 +281,7 @@ sb.add_request_handler(AboutVoicerIntentHandler())
 sb.add_request_handler(WhyCreateVoicerIntentHandler())
 sb.add_request_handler(CodeNameIntentHandler())
 sb.add_request_handler(TripleCInfoIntentHandler())
+sb.add_request_handler(VoicerSupervisorIntentHandler())
 
 
 

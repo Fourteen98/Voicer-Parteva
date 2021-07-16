@@ -170,7 +170,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 #########################################################################################
 
 class AboutVoicerIntentHandler(AbstractRequestHandler):
-    """Handler for Hello World Intent."""
+    """Handler for About Voicer Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
         return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
@@ -192,10 +192,10 @@ class AboutVoicerIntentHandler(AbstractRequestHandler):
         )
 
 class WhyCreateVoicerIntentHandler(AbstractRequestHandler):
-    """Handler for Hello World Intent."""
+    """Handler for Why Create Voicer Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
+        return ask_utils.is_intent_name("WhyCreateVoicerIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
@@ -211,7 +211,7 @@ class WhyCreateVoicerIntentHandler(AbstractRequestHandler):
         )
 
 class CodeNameIntentHandler(AbstractRequestHandler):
-    """Handler for Hello World Intent."""
+    """Handler for Code Name Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
         return ask_utils.is_intent_name("CodeNameIntent")(handler_input)

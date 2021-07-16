@@ -13,6 +13,8 @@ from ask_sdk_core.dispatch_components import AbstractExceptionHandler
 from ask_sdk_core.handler_input import HandlerInput
 
 from ask_sdk_model import Response
+import random
+ #NB: I imported random module for future universal usage
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -36,16 +38,19 @@ class LaunchRequestHandler(AbstractRequestHandler):
                 .response
         )
 
-
-class HelloWorldIntentHandler(AbstractRequestHandler):
+#modified helloworldintenthandler to hellovoicerintenthandler
+class HelloVoicerIntentHandler(AbstractRequestHandler):
     """Handler for Hello World Intent."""
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("HelloWorldIntent")(handler_input)
+        return ask_utils.is_intent_name("HelloVoicerIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Hello World!"
+        #NB: I imported random module for future universal usage
+        greetings = ["Hey", "Hello", "What's up", "Hi", "What dey go on", "Salam"]
+
+        speak_output = random.choice(greetings) + ', I am Voicer, An Alexa skill for KTU'
 
         return (
             handler_input.response_builder
@@ -171,7 +176,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(HelloWorldIntentHandler())
+sb.add_request_handler(HelloVoicerIntentHandler())
 sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())

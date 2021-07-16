@@ -20,16 +20,24 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "HelloVoicerIntent",
           "slots": [],
           "samples": [
-            "hello",
-            "how are you",
-            "say hi world",
-            "say hi",
-            "hi",
-            "say hello world",
-            "say hello"
+            "Hello KTU Voicer",
+            "Hello Voicer Parteva",
+            "Hello",
+            "Hey you",
+            "Salam Voicer",
+            "Salam Voicer Parteva",
+            "Salam KTU Voicer",
+            "Salam",
+            "What dey go on Voicer",
+            "What dey go on",
+            "What dey gon on Voicer Parteva",
+            "what's up Voicer",
+            "What's up Voicer Parteva",
+            "What's up KTU Voicer",
+            "What's up "
           ]
         },
         {

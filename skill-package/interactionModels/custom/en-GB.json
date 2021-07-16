@@ -33,6 +33,127 @@
           ]
         },
         {
+          "name": "KtuSrcPresidentIntent",
+          "slots": [],
+          "samples": [
+            "who is the current KTU SRC President",
+            "who is the vice president of Ktu SRC",
+            "ktu src president",
+            "ktu src vice president",
+            "Koforidua Technical University SRC president",
+            "Koforidua Technical University SRC vice president",
+            "does ktu have SRC president",
+            "what is the name of ktu src president",
+            "what is the name of the vice president of ktu src",
+            "vice president of ktu src",
+            "president of ktu src",
+            "what is the name of the president and vice president of ktu src",
+            "who is the src president ",
+            "who is victor togoh",
+            "victor togoh",
+            "who is kwesi manful ktu",
+            "kwesi manful"
+          ]
+        },
+        {
+          "name": "KtuViceChancellorIntent",
+          "slots": [],
+          "samples": [
+            "who is the vice chancellor of ktu",
+            "vice chancellor of ktu",
+            "ktu vice chancellor",
+            "does ktu have a vice chancellor",
+            "Prof David Kofi Essumang",
+            "vice chancellor of Koforida Technical Univesity",
+            "vice chancellor of koforidua poly",
+            "who is the vc",
+            "what is the name of ktu vc",
+            "what is the name of ktu vice chancellor",
+            "tell me about the vc of ktu"
+          ]
+        },
+
+        {
+          "name": "KtuWebsiteIntent",
+          "slots": [],
+          "samples": [
+            "what is the website of ktu",
+            "what is the website of Koforidua Technical University",
+            "ktu website",
+            "does ktu have a website",
+            "website of ktu",
+            "website of koforidua technical university",
+            "website of koforidua poly",
+            "koforidua poly website",
+            "how can i contact ktu",
+            "what is the url of ktu",
+            "ktu is the main website of Ktu"
+          ]
+        },
+
+        {
+          "name": "KtuEstablishedIntent",
+          "slots": [],
+          "samples": [
+            "what is the year  ktu was founded",
+            "what is the year ktu was established",
+            "when was ktu opened",
+            "ktu establishment year",
+            "when did start operation",
+            "year ktu started ",
+            "when was ktu started",
+            "did was ktu established",
+            "when did ktu commence operation",
+            "which year was Koforidua Technical University founded",
+            "Koforidua Technical University",
+            "who built Koforidua Technical University",
+            "who owns ktu"
+          ]
+        },
+
+        {
+          "name": "KtuMottoIntent",
+          "slots": [],
+          "samples": [
+            "what is the motto of Ktu",
+            "ktu motto",
+            "motto of Koforidua technical university",
+            "motto of koforidua poly",
+            "what is the motto of Koforidua technical univerity",
+            "what is the motto of Koforidua Polythecnic ",
+            "does ktu have a motto"
+          ]
+        },
+
+        {
+          "name": "KtuLocationIntent",
+          "slots": [],
+          "samples": [
+            "where is Koforidua Technical University",
+            "which region is Koforidua Technical University",
+            "ktu location",
+            "what is the location of koforidua technical university",
+            "where is ktu located",
+            "what is the location of Koforidua Polythecnic ",
+            "where of Koforidua Polythecnic "
+          ]
+        },
+
+        {
+          "name": "KtuPopulationIntent",
+          "slots": [],
+          "samples": [
+            "what is the student population of Koforidua Technical University",
+            "what is the  of Koforidua Technical University",
+            "student population of ktu",
+            "how many studets  are in ktu",
+            "are the student in ktu",
+            "what is student population of Koforidua Polythecnic ",
+            "student population of ktu"
+          ]
+        },
+
+=======
           "name": "AboutVoicerIntent",
           "slots": [],
           "samples": [
@@ -104,6 +225,7 @@
           ]
 
         },
+
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

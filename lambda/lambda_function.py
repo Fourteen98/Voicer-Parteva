@@ -285,6 +285,144 @@ class FutureOfVoicerIntentHandler(AbstractRequestHandler):
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
 # defined are included below. The order matters - they're processed top to bottom.
 
+#KTUKey Information Handlers can be found here
+#<-------------------------------------------->
+#KTU SRC President Intent and Handler
+class KtuSrcPresidentIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuSrcPresidentIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Victor Togoh is the current SRC President of KtU. He is a final year student in the accountancy " 
+        " department of KTU. And his vice is Kwesi Manful, a final year student of the computer science deparment of ktu "
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+#KtuViceChancellorhandler code
+class KtuViceChancellorIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuViceChancellorIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Professor David Kofi Essumang is the current vice chancellor of KTU. Prof. Essumang holds a Doctor of Philosophy (PhD) in"
+        " Environmental Chemistry from the Aalborg University of Denmark and a Master of Philosophy (M. Phil) in Chemistry, "
+        " as well as B.Sc in Chemistry and Diploma in Education from the University of Cape Coast. He had his secondary school"
+        " education at Agona Nsaba Presbyterian Secondary School and St. Augustine’s College, Cape Coast for the ‘O’ and ‘A’ "
+        " Level Certificates respectively."
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+#KtuWebsiteHandler code
+class KtuWebsiteIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuWebsiteIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "the website of ktu is www.ktu.edu.gh"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+
+#KtuYear Established Intent
+class KtuEstablishedIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuEstablishedIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "KTU was established in the year 1997 by the government of Ghana"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class KtuMottoIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuMottoIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The motto of Koforidua Technical University is Innovating for development"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class KtuLocationIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuLocationIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Koforidua Technical university is located in Koforidua, the Eastern region of Ghana"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )        
+
+class KtuPopulationIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuPopulationIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "There are over 8000 student currently in KTU"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )              
+
 
 sb = SkillBuilder()
 
@@ -294,6 +432,17 @@ sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
+
+
+#KtuKeyInfo handlers
+sb.add_request_handler(KtuWebsiteIntentHandler())
+sb.add_request_handler(KtuSrcPresidentIntentHandler())
+sb.add_request_handler(KtuViceChancellorIntentHandler())
+sb.add_request_handler(KtuEstablishedIntentHandler())
+sb.add_request_handler(KtuMottoIntentHandler())
+sb.add_request_handler(KtuLocationIntentHandler())
+sb.add_request_handler(KtuPopulationIntentHandler())
+#<---------- END OF KTUKEYINFO HANDLERS--------------------->
 sb.add_request_handler(AboutVoicerIntentHandler())
 sb.add_request_handler(WhyCreateVoicerIntentHandler())
 sb.add_request_handler(CodeNameIntentHandler())
@@ -304,7 +453,9 @@ sb.add_request_handler(FutureOfVoicerIntentHandler())
 
 
 # Remember to not cross this skill builder
+ 
 sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHandler is last so it doesn't override your custom intent handlers
+
 
 sb.add_exception_handler(CatchAllExceptionHandler())
 

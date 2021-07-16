@@ -33,6 +33,29 @@
           ]
         },
         {
+          "name": "KtuSrcPresidentIntent",
+          "slots": [],
+          "samples": [
+            "who is the current KTU SRC President",
+            "who is the vice president of Ktu SRC",
+            "ktu src president",
+            "ktu src vice president",
+            "Koforidua Technical University SRC president",
+            "Koforidua Technical University SRC vice president",
+            "does ktu have SRC president",
+            "what is the name of ktu src president",
+            "what is the name of the vice president of ktu src",
+            "vice president of ktu src",
+            "president of ktu src",
+            "what is the name of the president and vice president of ktu src",
+            "who is the src president ",
+            "who is victor togoh",
+            "victor togoh",
+            "who is kwesi manful ktu",
+            "kwesi manful"
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

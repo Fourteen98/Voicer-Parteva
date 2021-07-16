@@ -167,6 +167,29 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 # payloads to the handlers above. Make sure any new handlers or interceptors you've
 # defined are included below. The order matters - they're processed top to bottom.
 
+#KTUKey Information Handlers can be found here
+#<-------------------------------------------->
+#KTU SRC President Intent and Handler
+class KtuSrcPresidentIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuSrcPresidentIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Victor Togoh is the current SRC President of KtU. He is a final year student in the accountancy " 
+        " department of KTU. And his vice is Kwesi Manful, a final year student of the computer science deparment of ktu "
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+
 
 sb = SkillBuilder()
 

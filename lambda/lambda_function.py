@@ -191,6 +191,43 @@ class AboutVoicerIntentHandler(AbstractRequestHandler):
                 .response
         )
 
+class WhyCreateVoicerIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AboutVoicerIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " I was created by the Triple C's to act as a digital friend and a student companion, " 
+        " answering questions, providing feedback and advice. I am able to answer both simple and complex conversations"
+        " to assist student in navigating their campus and academic life."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+class CodeNameIntentHandler(AbstractRequestHandler):
+    """Handler for Hello World Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("CodeNameIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = " My codename is voicer parteva or Voicer but i can only be invoked by saying 'open ktu voicer' "
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )
+
+
 
 
 # The SkillBuilder object acts as the entry point for your skill, routing all request and response
@@ -206,6 +243,13 @@ sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(CancelOrStopIntentHandler())
 sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
+sb.add_request_handler(AboutVoicerIntentHandler())
+sb.add_request_handler(WhyCreateVoicerIntentHandler())
+sb.add_request_handler(CodeNameIntentHandler())
+
+
+
+# Remember to not cross this skill builder
 sb.add_request_handler(IntentReflectorHandler()) # make sure IntentReflectorHandler is last so it doesn't override your custom intent handlers
 
 sb.add_exception_handler(CatchAllExceptionHandler())

@@ -33,6 +33,22 @@
           ]
         },
         {
+          "name": "AboutKtuIntent",
+          "slots": [],
+          "samples": [
+            "what is koforidua polytechnic",
+            "tell me about kpoly",
+            "what is kpoly",
+            "tell me something about kpoly",
+            "tell me something about koforidua polytechnic ",
+            "tell me something about ktu",
+            "what is koforidua technical university",
+            "what is ktu",
+            "tell me about ktu",
+            "Tell me about Koforidua technical university"
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

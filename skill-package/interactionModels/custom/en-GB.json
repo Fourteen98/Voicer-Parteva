@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "change me",
+      "invocationName": "ktu voicer",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -153,10 +153,6 @@
           ]
         },
         {
-<<<<<<< HEAD
-=======
-
->>>>>>> 52fb4fece3d1712211832d9e654c752469ae3c41
           "name": "AboutVoicerIntent",
           "slots": [],
           "samples": [

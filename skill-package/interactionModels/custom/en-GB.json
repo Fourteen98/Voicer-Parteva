@@ -226,6 +226,17 @@
             "registrar of Koforidua Technical University"
           ]
         },
+        {
+          "name": "KtuHodStudentServiceIntent",
+          "slots": [],
+          "samples": [
+            "What is the name of head of department of student service of KTU",
+            "Who is the head of department of student service of Koforidua Technical University",
+            "Does Ktu have head of department of student services",
+            "Who is the HOD of student service",
+            "Head of Department of student services of Koforidua Technical University"
+          ]
+        },
 
 
         {

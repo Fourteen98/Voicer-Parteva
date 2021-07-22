@@ -224,7 +224,69 @@
           ]
 
         },
+        {
+          "name": "LargestFacultyIntent",
+          "slots" : [],
+          "samples": [
+            "What is the largest faculty in ktu",
+            "what is the largest faculty in koforidua technical university",
+            "what is the biggest faculty in koforidua technical university", 
+            "what is the biggest faculty in ktu",
+            "which faculty is the biggest in the school",
+            "which faculty is the biggest in the university",
+            "which faculty is the largest in the school",
+            "which faculty is the largest in the university", 
+            "is FBMS the largest faculty"
+          ]
+        },
+        {
+          "name": "AboutFbmsIntent",
+          "slots": [],
+          "samples": [
+            "what is fbms",
+            "what is faculty of business and management studies",
+            "Tell me about fbms",
+            "Tell me about faculty of business and management studies",
+            "fbms",
+            "faculty of business and management studies"
 
+          ]
+        },
+        {
+          "name": "FbmsVisionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Vision statement of fbms",
+            "what is the Vision statement of faculty of business and management studies",
+            "Vision statement of the fbms",
+            "Vision statement of faculty of business and management studies"
+          ]
+        },
+        {
+          "name": "FbmsMissionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Mission statement of fbms",
+            "what is the Mission statement of faculty of business and management studies",
+            "Mission statement of the fbms",
+            "Mission statement of faculty of business and management studies"
+          ]
+
+        },
+        {
+          "name": "FbmsDepartmentIntent",
+          "slots": [],
+          "samples": [
+            "How many department are in fbms",
+            "How many department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies",
+            "How many academic department are in fbms",
+            "How many academic department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies"
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

@@ -243,7 +243,7 @@
         },
         
         {
-          "name": "KtuAthleticsInfoIntent",
+          "name": "KtuAthleticsInformationIntent",
           "slots": [],
           "samples": [
             "What are the types of athletics game in ktu",
@@ -253,6 +253,21 @@
             "ktu sports",
             "sports in koforidua technical university",
             "what ktu sports is best"
+          ]
+
+        },
+
+        {
+          "name": "KtuVisionIntent",
+          "slots": [],
+          "samples": [
+            "What is the vision of Koforidua Technical University",
+            "what is the vision of ktu",
+            "ktu vision",
+            "vision of koforidua technical university",
+            "does koforidua technical university have a vision",
+            "what is the aim of koforidua technical university",
+            "aim of Koforidua Technical University"
           ]
 
         },

@@ -272,6 +272,19 @@
 
         },
         
+        {
+          "name": "KtuMissionIntent",
+          "slots": [],
+          "samples": [
+            "What is the mission  of Koforidua Technical University",
+            "what is the mission  of ktu",
+            "ktu mission",
+            "mission of koforidua technical university",
+            "does koforidua technical university have a mission"
+            
+          ]
+
+        },
 
 
         {

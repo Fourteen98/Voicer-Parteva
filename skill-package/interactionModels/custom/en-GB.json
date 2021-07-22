@@ -153,7 +153,8 @@
           ]
         },
 
-=======
+        
+        {
           "name": "AboutVoicerIntent",
           "slots": [],
           "samples": [
@@ -175,6 +176,7 @@
             "how smart is voicer parteva"
           ]
         },
+
         {
           "name": "CodeNameIntent",
           "slots": [],
@@ -186,6 +188,7 @@
             "codename"
           ]
         },
+
         {
           "name": "VoicerSupervisorIntent",
           "slots": [],
@@ -225,6 +228,20 @@
           ]
 
         },
+        {
+          "name": "KtuUniversityTypeIntent",
+          "slots": [],
+          "samples": [
+            "What type of university is ktu",
+            "ktu university type",
+            "is ktu a traditional university",
+            "is ktu a technical university ",
+            "what type of university is Koforidua Technical University",
+            "is ktu a traditional university"
+          ]
+
+        },
+        
 
         {
           "name": "AMAZON.FallbackIntent",

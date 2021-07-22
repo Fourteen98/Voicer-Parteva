@@ -242,6 +242,22 @@
 
         },
         
+        {
+          "name": "KtuAthleticsInfoIntent",
+          "slots": [],
+          "samples": [
+            "What are the types of athletics game in ktu",
+            "what are the sports in koforidua technical university",
+            "athletics in koforidua technical university",
+            "ktu athletics",
+            "ktu sports",
+            "sports in koforidua technical university",
+            "what ktu sports is best"
+          ]
+
+        },
+        
+
 
         {
           "name": "AMAZON.FallbackIntent",

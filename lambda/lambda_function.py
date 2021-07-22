@@ -442,6 +442,24 @@ class KtuUniversityTypeIntentHandler(AbstractRequestHandler):
                 .response
         )   
 
+class KtuAthleticsInfoIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuAthleticsInfoIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Football, Basketball, Volleyball and Tennis are the sports interested students in"
+        + " Koforidua Technical University"
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )   
+
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
@@ -461,6 +479,7 @@ sb.add_request_handler(KtuMottoIntentHandler())
 sb.add_request_handler(KtuLocationIntentHandler())
 sb.add_request_handler(KtuPopulationIntentHandler())
 sb.add_request_handler(KtuUniversityTypeIntentHandler())
+sb.add_request_handler(KtuAthleticsInfoIntentHandler())
 #<---------- END OF KTUKEYINFO HANDLERS--------------------->
 sb.add_request_handler(AboutVoicerIntentHandler())
 sb.add_request_handler(WhyCreateVoicerIntentHandler())

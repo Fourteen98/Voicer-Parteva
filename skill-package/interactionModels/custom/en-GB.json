@@ -286,6 +286,18 @@
 
         },
 
+        {
+          "name": "KtuCoreValuesIntent",
+          "slots": [],
+          "samples": [
+            "What are the core values of Koforidua Technical University",
+            "What is the core values of Koforidua Technical University",
+            "core values of ktu",
+            "name the core values of Koforidua Technical University",
+            "mention the core  of koforidua technical university"  
+          ]
+
+        },
 
         {
           "name": "AMAZON.FallbackIntent",

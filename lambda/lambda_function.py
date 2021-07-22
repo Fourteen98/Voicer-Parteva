@@ -495,7 +495,25 @@ class KtuMissionIntentHandler(AbstractRequestHandler):
                 .response
         )   
 
-        
+class KtuCoreValuesIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuCoreValuesIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Koforidua Technical University has three core values. First is innovation.Innovation means  constantly seeking creative ways of doing things better"
+        +" second is Integrity. Integrity means original and sincere in all we think and do. Last core value is impact."
+        +" impact means bringing desirable change to the larger community" 
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )   
+
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
@@ -518,6 +536,7 @@ sb.add_request_handler(KtuUniversityTypeIntentHandler())
 sb.add_request_handler(KtuAthleticsInformationIntentHandler())
 sb.add_request_handler(KtuVisionIntentHandler())
 sb.add_request_handler(KtuMissionIntentHandler())
+sb.add_request_handler(KtuCoreValuesIntentHandler())
 
 #<---------- END OF KTUKEYINFO HANDLERS--------------------->
 sb.add_request_handler(AboutVoicerIntentHandler())

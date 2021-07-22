@@ -249,7 +249,17 @@
             "Tell me about faculty of business and management studies",
             "fbms",
             "faculty of business and management studies"
-            
+
+          ]
+        },
+        {
+          "name": "FbmsVisionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Vision statement of fbms",
+            "what is the Vision statement of faculty of business and management studies",
+            "Vision statement of the fbms",
+            "Vision statement of faculty of business and management studies"
           ]
         },
         {

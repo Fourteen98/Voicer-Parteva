@@ -462,6 +462,23 @@ class AboutFbmsIntentHandler(AbstractRequestHandler):
                 .response
         ) 
 
+class fbmsVisionStatementIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FbmsVisionStatementIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The vision statement of the faculty of business and management studies is:" 
+        " 'To be an excellent hands-on, entrepreneurial training Faculty in Ghana and beyond.'"
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        ) 
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
@@ -494,6 +511,7 @@ sb.add_request_handler(FutureOfVoicerIntentHandler())
 #<---------- BEGINNING OF FBMS HANDLERS--------------------->
 sb.add_request_handler(LargestFacultyIntentHandler())
 sb.add_request_handler(AboutFbmsIntentHandler())
+sb.add_request_handler(fbmsVisionStatementIntentHandler())
 
 
 

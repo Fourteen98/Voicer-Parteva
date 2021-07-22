@@ -479,6 +479,30 @@ class fbmsVisionStatementIntentHandler(AbstractRequestHandler):
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
         ) 
+
+class fbmsMisionStatementIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FbmsMisionStatementIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The Faculty of Business and Management Studies is a centre of excellence, "
+        "providing high-quality teaching and training, research and outreach in Business and allied disciplines."
+        " The mission is accomplished primarily through instructions, simulations and collaboration with industry "
+        "and supported by applied research and services.  The Faculty focuses on curricula that facilitate professional "
+        "career development in the private and public sectors of the economy.  The role of technology in decision-making is "
+        "emphasized through the integration of information and communication technology (ICT)"
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        ) 
+
+
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
@@ -512,6 +536,7 @@ sb.add_request_handler(FutureOfVoicerIntentHandler())
 sb.add_request_handler(LargestFacultyIntentHandler())
 sb.add_request_handler(AboutFbmsIntentHandler())
 sb.add_request_handler(fbmsVisionStatementIntentHandler())
+sb.add_request_handler(fbmsMisionStatementIntentHandler())
 
 
 

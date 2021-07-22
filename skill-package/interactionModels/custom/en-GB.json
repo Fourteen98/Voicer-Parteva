@@ -263,6 +263,17 @@
           ]
         },
         {
+          "name": "FbmsMissionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Mission statement of fbms",
+            "what is the Mission statement of faculty of business and management studies",
+            "Mission statement of the fbms",
+            "Mission statement of faculty of business and management studies"
+          ]
+
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

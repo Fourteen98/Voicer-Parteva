@@ -424,6 +424,26 @@ class KtuPopulationIntentHandler(AbstractRequestHandler):
         )              
 
 
+class KtuRegistrarNameIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuRegistrarNameIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Dr N.A Mensah-Livingstone is the registrar of Koforidua Technical University. The office"
+                      + " The Registrar’s Offices is headed by the Registrar, who is the University’s Chief Administrative+"
+                      + " Officer and Secretary to the Council of the University."        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )              
+
+
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
@@ -442,6 +462,8 @@ sb.add_request_handler(KtuEstablishedIntentHandler())
 sb.add_request_handler(KtuMottoIntentHandler())
 sb.add_request_handler(KtuLocationIntentHandler())
 sb.add_request_handler(KtuPopulationIntentHandler())
+sb.add_request_handler(KtuRegistrarNameIntentHandler())
+
 #<---------- END OF KTUKEYINFO HANDLERS--------------------->
 sb.add_request_handler(AboutVoicerIntentHandler())
 sb.add_request_handler(WhyCreateVoicerIntentHandler())

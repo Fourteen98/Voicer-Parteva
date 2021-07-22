@@ -274,6 +274,20 @@
 
         },
         {
+          "name": "FbmsDepartmentIntent",
+          "slots": [],
+          "samples": [
+            "How many department are in fbms",
+            "How many department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies",
+            "How many academic department are in fbms",
+            "How many academic department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies"
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

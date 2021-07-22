@@ -502,6 +502,25 @@ class fbmsMisionStatementIntentHandler(AbstractRequestHandler):
                 .response
         ) 
 
+class fbmsDepartmentIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FbmsDepartmentIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The Faculty has Six Academic Departments, namely; " 
+        "Accountancy, Procurement and Supply Science, Marketing, General Studies, "
+        "Secretaryship and Management Studies, and Professional Studies, as well as an administrative section,"
+        " which is headed by the Dean."
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        ) 
 
 sb = SkillBuilder()
 
@@ -537,6 +556,7 @@ sb.add_request_handler(LargestFacultyIntentHandler())
 sb.add_request_handler(AboutFbmsIntentHandler())
 sb.add_request_handler(fbmsVisionStatementIntentHandler())
 sb.add_request_handler(fbmsMisionStatementIntentHandler())
+sb.add_request_handler(fbmsDepartmentIntentHandler())
 
 
 

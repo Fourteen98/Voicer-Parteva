@@ -424,6 +424,18 @@ class KtuPopulationIntentHandler(AbstractRequestHandler):
                 .response
         ) 
 
+
+class KtuUniversityTypeIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuUniversityTypeIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Koforidua Technical University is a technical univesity among the 10 technical universites in Ghana,"
+        + " it is not a traditional university."
+
 # FBMS Information Handlers can be found here
 #<-------------------------------------------->
 class LargestFacultyIntentHandler(AbstractRequestHandler):
@@ -435,6 +447,7 @@ class LargestFacultyIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "The Faculty of Bussiness and Management Studies is the largest in the university."
+
         
 
         return (
@@ -442,6 +455,21 @@ class LargestFacultyIntentHandler(AbstractRequestHandler):
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
+
+        )   
+
+class KtuAthleticsInformationIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuAthleticsInformationIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Football, Basketball, Volleyball and Tennis are the sports interested students in"
+        + " Koforidua Technical University"
+
+
         ) 
              
 class AboutFbmsIntentHandler(AbstractRequestHandler):
@@ -456,11 +484,26 @@ class AboutFbmsIntentHandler(AbstractRequestHandler):
         " professionally driven, highly qualified and skilled middle-level manpower to contribute to the growth of Ghana’s economy."
         "  It is the largest Faculty in the University. The Faculty has. 6 department."
         
+
         return (
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
+
+        )   
+
+class KtuVisionIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuVisionIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "To be a Reference Point for World-Class Science and Technology Education and Applied Research"
+
+
         ) 
 
 class FbmsVisionStatementIntentHandler(AbstractRequestHandler):
@@ -474,11 +517,27 @@ class FbmsVisionStatementIntentHandler(AbstractRequestHandler):
         speak_output = "The vision statement of the faculty of business and management studies is:" 
         " 'To be an excellent hands-on, entrepreneurial training Faculty in Ghana and beyond.'"
         
+
         return (
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
+
+        )   
+
+
+class KtuMissionIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuMissionIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "To provide tertiary level technical education through the development of carrier-focused skills in collaboration with industry"
+
+
         ) 
 
 class FbmsMissionStatementIntentHandler(AbstractRequestHandler):
@@ -496,11 +555,28 @@ class FbmsMissionStatementIntentHandler(AbstractRequestHandler):
         "career development in the private and public sectors of the economy.  The role of technology in decision-making is "
         "emphasized through the integration of information and communication technology (ICT)"
         
+
         return (
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
+
+        )   
+
+class KtuCoreValuesIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuCoreValuesIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "Koforidua Technical University has three core values. First is innovation.Innovation means  constantly seeking creative ways of doing things better"
+        +" second is Integrity. Integrity means original and sincere in all we think and do. Last core value is impact."
+        +" impact means bringing desirable change to the larger community" 
+
+
         ) 
 
 class FbmsDepartmentIntentHandler(AbstractRequestHandler):
@@ -516,12 +592,17 @@ class FbmsDepartmentIntentHandler(AbstractRequestHandler):
         "Secretaryship and Management Studies, and Professional Studies, as well as an administrative section,"
         " which is headed by the Dean."
         
+
         return (
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
+
+        )   
+
         ) 
+
 
 sb = SkillBuilder()
 
@@ -541,6 +622,12 @@ sb.add_request_handler(KtuEstablishedIntentHandler())
 sb.add_request_handler(KtuMottoIntentHandler())
 sb.add_request_handler(KtuLocationIntentHandler())
 sb.add_request_handler(KtuPopulationIntentHandler())
+sb.add_request_handler(KtuUniversityTypeIntentHandler())
+sb.add_request_handler(KtuAthleticsInformationIntentHandler())
+sb.add_request_handler(KtuVisionIntentHandler())
+sb.add_request_handler(KtuMissionIntentHandler())
+sb.add_request_handler(KtuCoreValuesIntentHandler())
+
 #<---------- END OF KTUKEYINFO HANDLERS--------------------->
 
 #AboutVoicer Handlers

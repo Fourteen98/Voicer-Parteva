@@ -224,7 +224,21 @@
           ]
 
         },
-
+        {
+          "name": "LargestFacultyIntent",
+          "slots" : [],
+          "samples": [
+            "What is the largest faculty in ktu",
+            "what is the largest faculty in koforidua technical university",
+            "what is the biggest faculty in koforidua technical university", 
+            "what is the biggest faculty in ktu",
+            "which faculty is the biggest in the school",
+            "which faculty is the biggest in the university",
+            "which faculty is the largest in the school",
+            "which faculty is the largest in the university", 
+            "is FBMS the largest faculty"
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

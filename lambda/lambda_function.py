@@ -421,7 +421,28 @@ class KtuPopulationIntentHandler(AbstractRequestHandler):
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
-        )              
+        ) 
+
+# FBMS Information Handlers can be found here
+#<-------------------------------------------->
+class LargestFacultyIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("LargestFacultyIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The Faculty of Bussiness and Management Studies is the largest in the university."
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        ) 
+             
 
 
 sb = SkillBuilder()
@@ -443,12 +464,18 @@ sb.add_request_handler(KtuMottoIntentHandler())
 sb.add_request_handler(KtuLocationIntentHandler())
 sb.add_request_handler(KtuPopulationIntentHandler())
 #<---------- END OF KTUKEYINFO HANDLERS--------------------->
+
+#AboutVoicer Handlers
 sb.add_request_handler(AboutVoicerIntentHandler())
 sb.add_request_handler(WhyCreateVoicerIntentHandler())
 sb.add_request_handler(CodeNameIntentHandler())
 sb.add_request_handler(TripleCInfoIntentHandler())
 sb.add_request_handler(VoicerSupervisorIntentHandler())
 sb.add_request_handler(FutureOfVoicerIntentHandler())
+#<---------- END OF VOICER HANDLERS--------------------->
+
+#<---------- BEGINNING OF FBMS HANDLERS--------------------->
+sb.add_request_handler(LargestFacultyIntentHandler())
 
 
 

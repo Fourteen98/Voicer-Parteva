@@ -177,6 +177,7 @@ class AboutVoicerIntentHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
+        
         speak_output = " Voicer Parteva is a codename for Voicer KTU. I speak on behalf of Koforidua Technical University"
         " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
         " I was created by the Triple C group as a project for their end of HND Computer Science." 
@@ -253,7 +254,7 @@ class VoicerSupervisorIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Mr Collins Collinson is the supervisor of voicer." 
-        " He is a programming Lecturer in Koforidua Technical University and the examination officer for the"
+        " He is a programming Lecturer in Koforidua Technical University and the examination officer for the" 
         " computer science department. He is more like a Dad to my creators."
 
         return (
@@ -462,7 +463,7 @@ class AboutFbmsIntentHandler(AbstractRequestHandler):
                 .response
         ) 
 
-class fbmsVisionStatementIntentHandler(AbstractRequestHandler):
+class FbmsVisionStatementIntentHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -480,11 +481,11 @@ class fbmsVisionStatementIntentHandler(AbstractRequestHandler):
                 .response
         ) 
 
-class fbmsMisionStatementIntentHandler(AbstractRequestHandler):
+class FbmsMissionStatementIntentHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("FbmsMisionStatementIntent")(handler_input)
+        return ask_utils.is_intent_name("FbmsMissionStatementIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
@@ -502,7 +503,7 @@ class fbmsMisionStatementIntentHandler(AbstractRequestHandler):
                 .response
         ) 
 
-class fbmsDepartmentIntentHandler(AbstractRequestHandler):
+class FbmsDepartmentIntentHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
@@ -554,9 +555,9 @@ sb.add_request_handler(FutureOfVoicerIntentHandler())
 #<---------- BEGINNING OF FBMS HANDLERS--------------------->
 sb.add_request_handler(LargestFacultyIntentHandler())
 sb.add_request_handler(AboutFbmsIntentHandler())
-sb.add_request_handler(fbmsVisionStatementIntentHandler())
-sb.add_request_handler(fbmsMisionStatementIntentHandler())
-sb.add_request_handler(fbmsDepartmentIntentHandler())
+sb.add_request_handler(FbmsVisionStatementIntentHandler())
+sb.add_request_handler(FbmsMissionStatementIntentHandler())
+sb.add_request_handler(FbmsDepartmentIntentHandler())
 
 
 

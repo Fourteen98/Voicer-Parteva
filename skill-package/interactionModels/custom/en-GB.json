@@ -240,6 +240,19 @@
           ]
         },
         {
+          "name": "AboutFbmsIntent",
+          "slots": [],
+          "samples": [
+            "what is fbms",
+            "what is faculty of business and management studies",
+            "Tell me about fbms",
+            "Tell me about faculty of business and management studies",
+            "fbms",
+            "faculty of business and management studies"
+            
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

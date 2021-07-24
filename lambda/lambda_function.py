@@ -470,7 +470,14 @@ class KtuAthleticsInformationIntentHandler(AbstractRequestHandler):
         + " Koforidua Technical University"
 
 
-        ) 
+         return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+
+        )   
+        
              
 class AboutFbmsIntentHandler(AbstractRequestHandler):
     
@@ -504,7 +511,13 @@ class KtuVisionIntentHandler(AbstractRequestHandler):
         speak_output = "To be a Reference Point for World-Class Science and Technology Education and Applied Research"
 
 
-        ) 
+         return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+
+        )   
 
 class FbmsVisionStatementIntentHandler(AbstractRequestHandler):
     
@@ -537,8 +550,15 @@ class KtuMissionIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speak_output = "To provide tertiary level technical education through the development of carrier-focused skills in collaboration with industry"
 
+         return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
-        ) 
+        )   
+
+        
 
 class FbmsMissionStatementIntentHandler(AbstractRequestHandler):
     
@@ -576,8 +596,14 @@ class KtuCoreValuesIntentHandler(AbstractRequestHandler):
         +" second is Integrity. Integrity means original and sincere in all we think and do. Last core value is impact."
         +" impact means bringing desirable change to the larger community" 
 
+         return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
-        ) 
+        )   
+        
 
 class FbmsDepartmentIntentHandler(AbstractRequestHandler):
     
@@ -601,7 +627,7 @@ class FbmsDepartmentIntentHandler(AbstractRequestHandler):
 
         )   
 
-        ) 
+        
 
 
 class KtuRegistrarNameIntentHandler(AbstractRequestHandler):
@@ -743,8 +769,88 @@ class KtuVcSecretariatOfficeContactIntentHandler(AbstractRequestHandler):
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
-        )            
+        )          
+
+
+class AboutFastIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AboutFastIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The Faculty of Applied Science run Bachelor of Technology, Bachelor of Science, " +
+        "HND, and Certificate programmes. The Faculty trains students in Science, " +
+        "post-graduate courses in Science, Technology and other related fields. The faculty has the objective " +
+        "of turning out professionals both for industry and academia."
+
+
+         return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+
+        )     
             
+Class FastVisionIntentHandler(AbstractRequestHandler):
+    return can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FastVisionIntent")(handler_input)
+
+    def handle(self, handler_input):
+        speak_output = "To become a world class center of innovation in applied science and technology" +
+        " through the provision fo scientific and technological solutions".
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response   
+        )
+
+
+class FastMissionIntentHandler(AbstractRequestHandler):
+    return can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FastMissionIntent")(handler_input)
+    
+    def handle(self, handler_input):
+        speak_output = "To provide a conducive environment to promote teaching, research" + 
+        " and learning among staff members and students of the Faculty by developing tailor-made " +
+        "programmes for study geared toward imparting the requisite scientific and technological " + 
+        "knowledge for national development."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response   
+        )
+
+class FastDepartmentIntentHandler(AbstractRequestHandler):
+    return can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("FastMissionIntent")(handler_input)
+    
+    def handle(self, handler_input):
+        speak_output = "The Faculty of Applied Science has 6 Department, Namely: " +
+        " Statistics department, Computer science department, Hospitality management department " + 
+        " Food technology department, Postharvest department, and Fashion design and Textiles department " +
+        " which is collaboration with cape coast technical university."
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response   
+        )
+
+
+
+
+
 
 sb = SkillBuilder()
 
@@ -801,6 +907,14 @@ sb.add_request_handler(KtuStudentServiceContactIntentHandler())
 sb.add_request_handler(KtuAdmissionOfficeContactIntentHandler())
 sb.add_request_handler(KtuInternationalRelationsOfficeContactIntentHandler())
 sb.add_request_handler(KtuLaisonOfficeContactIntentHandler())
+
+#<!-------------------BEGINNING OF FAST HANDLERS--------------------->
+sb.add_request_handler(AboutFastIntentHandler())
+sb.add_request_handler(FastVisionIntentHandler())
+sb.add_request_handler(FastMissionIntentHandler())
+sb.add_request_handler(FastDepartmentIntentHandler())
+#<!------------------End of FAST HANDLERS-------------------------->
+
 
 # Remember to not cross this skill builder
  

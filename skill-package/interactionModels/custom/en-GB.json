@@ -255,6 +255,22 @@
 
         },
 
+        {
+          "name": "KtuAdmissionOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University admission office",
+            "how can i contact ktu admission office",
+            "contact information of ktu admission office",
+            "phone number of ktu admission office",
+            "admission of ktu",
+            "how can i call ktu admission office",
+            "phone number of ktu admission office"
+            
+          ]
+
+        },
+
 
         {
           "name": "AMAZON.FallbackIntent",

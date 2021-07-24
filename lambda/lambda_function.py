@@ -514,7 +514,24 @@ class KtuLaisonOfficeContactIntentHandler(AbstractRequestHandler):
                 .response
         )            
             
+class KtuVcSecretariatOfficeContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuVcSecretariatOfficeContactIntent")(handler_input)
 
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The Vice chancellor secretariat office  of Koforidua Technical University can be reached on +233   0342293002"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )            
+            
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())

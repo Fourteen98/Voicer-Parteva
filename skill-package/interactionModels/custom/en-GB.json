@@ -307,6 +307,22 @@
         },
 
         {
+          "name": "KtuVcSecretariatOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University vice chancellor secretariat  office",
+            "how can i contact ktu VC secretariat  office",
+            "contact information of ktu VC secretariat  office",
+            "phone number of ktu VC secretariat  office",
+            "vice chancellor secretariat  office of ktu",
+            "how can i call ktu vice chancellor secretariat  office",
+            "phone number of ktu vice chancellor secretariat  office"
+            
+          ]
+
+        },
+        
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

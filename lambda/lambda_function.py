@@ -735,15 +735,15 @@ class KtuInternationalRelationsOfficeContactIntentHandler(AbstractRequestHandler
                 .response
         )      
         
-class KtuLaisonOfficeContactIntentHandler(AbstractRequestHandler):
+class KtuLiaisonOfficeContactIntentHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("KtuLaisonOfficeContactIntent")(handler_input)
+        return ask_utils.is_intent_name("KtuLiaisonOfficeContactIntent")(handler_input)
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "The laison office  of Koforidua Technical University can be reached on +233  0303961714"
+        speak_output = "The liaison office  of Koforidua Technical University can be reached on +233  0303961714"
         
 
         return (
@@ -832,7 +832,7 @@ class FastMissionIntentHandler(AbstractRequestHandler):
 class FastDepartmentIntentHandler(AbstractRequestHandler):
     return can_handle(self, handler_input):
         # type: (HandlerInput) -> bool
-        return ask_utils.is_intent_name("FastMissionIntent")(handler_input)
+        return ask_utils.is_intent_name("FastDepartmentIntent")(handler_input)
     
     def handle(self, handler_input):
         speak_output = "The Faculty of Applied Science has 6 Department, Namely: " +
@@ -881,7 +881,7 @@ sb.add_request_handler(KtuMissionIntentHandler())
 sb.add_request_handler(KtuCoreValuesIntentHandler())
 
 
-#<---------- END OF KTUKEYINFO HANDLERS--------------------->
+#<---------- END OF KTU KEY INFO HANDLERS--------------------->
 
 #AboutVoicer Handlers
 sb.add_request_handler(AboutVoicerIntentHandler())
@@ -906,7 +906,7 @@ sb.add_request_handler(KtuHelpDeskIntentHandler())
 sb.add_request_handler(KtuStudentServiceContactIntentHandler())
 sb.add_request_handler(KtuAdmissionOfficeContactIntentHandler())
 sb.add_request_handler(KtuInternationalRelationsOfficeContactIntentHandler())
-sb.add_request_handler(KtuLaisonOfficeContactIntentHandler())
+sb.add_request_handler(KtuLiaisonOfficeContactIntentHandler())
 
 #<!-------------------BEGINNING OF FAST HANDLERS--------------------->
 sb.add_request_handler(AboutFastIntentHandler())

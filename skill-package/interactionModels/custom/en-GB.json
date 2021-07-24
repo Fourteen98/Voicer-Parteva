@@ -285,7 +285,35 @@
             "aim of Koforidua Technical University"
           ]
 
+
+        {
+          "name": "KtuHelpDeskIntent",
+          "slots": [],
+          "samples": [
+            "contact Koforidua Technical University Help Desk",
+            "how can I contact Ktu help desk",
+            "what is the contact of ktu help desk",
+            "phone number of ktu help desk",
+            "ktu help desk contact number",
+            "how can i access help in ktu",
+            "ktu help desk",
+            "call number of ktu help desk"
+
+          ]
+
         },
+        {
+          "name": "KtuStudentServiceContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University Student service deparmetn",
+            "how can i contact ktu student service department",
+            "contact information of ktu student service deparment",
+            "phone number of ktu student service department",
+            "how should i call ktu student service department",
+            "does ktu have student service department"
+            
+=======
         
         {
           "name": "KtuMissionIntent",
@@ -310,6 +338,24 @@
             "core values of ktu",
             "name the core values of Koforidua Technical University",
             "mention the core  of koforidua technical university"  
+
+          ]
+
+        },
+
+
+        {
+          "name": "KtuAdmissionOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University admission office",
+            "how can i contact ktu admission office",
+            "contact information of ktu admission office",
+            "phone number of ktu admission office",
+            "admission of ktu",
+            "how can i call ktu admission office",
+            "phone number of ktu admission office"
+            
           ]
 
         },
@@ -338,6 +384,7 @@
             "Tell me about faculty of business and management studies",
             "fbms",
             "faculty of business and management studies"
+
 
 
 
@@ -378,6 +425,57 @@
             "what is the number of department in faculty of business and management studies"
           ]
         },
+        {
+          "name": "KtuInternationalRelationsOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University international relations office",
+            "how can i contact ktu international relations office",
+            "contact information of ktu international relations office",
+            "phone number of ktu international relations  office",
+            "international relations office of ktu",
+            "how can i call ktu international relations office",
+            "phone number of ktu international relations office"
+            
+          ]
+
+        },
+
+        {
+          "name": "KtuLaisonOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University laison office",
+            "how can i contact ktu laison or attachment office",
+            "contact information of ktu attachment office",
+            "contact information of ktu internship office",
+            "phone number of ktu laison  office",
+            "phone number of ktu attachment  office",
+            "laison office of ktu",
+            "attachment office of ktu",
+            "how can i call laison office",
+            "phone number of ktu laison office"
+            
+          ]
+
+        },
+
+        {
+          "name": "KtuVcSecretariatOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University vice chancellor secretariat  office",
+            "how can i contact ktu VC secretariat  office",
+            "contact information of ktu VC secretariat  office",
+            "phone number of ktu VC secretariat  office",
+            "vice chancellor secretariat  office of ktu",
+            "how can i call ktu vice chancellor secretariat  office",
+            "phone number of ktu vice chancellor secretariat  office"
+            
+          ]
+
+        },
+        
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []

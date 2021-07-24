@@ -624,6 +624,17 @@ class KtuRegistrarNameIntentHandler(AbstractRequestHandler):
         )              
 
 
+
+class KtuHelpDeskIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuHelpDeskIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The help desk number of Koforidua Technical University is 	+233 034 229 3005"
+
 class KtuHodStudentServiceHandler(AbstractRequestHandler):
     
     def can_handle(self, handler_input):
@@ -633,6 +644,7 @@ class KtuHodStudentServiceHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "The name of the Head of student service department of koforidua Technical University is Mr. Timothy Fiadzoe"
+
         
 
         return (
@@ -641,6 +653,98 @@ class KtuHodStudentServiceHandler(AbstractRequestHandler):
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
                 .response
         )              
+
+
+class KtuStudentServiceContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuStudentServiceContactIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The student service   of Koforidua Technical University can be reached on +233  034 229 0311"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )     
+
+class KtuAdmissionOfficeContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuAdmissionOfficeContactIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The admission office  of Koforidua Technical University can be reached on +233  0342293705"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )  
+
+class KtuInternationalRelationsOfficeContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuInternationalRelationsOfficeContactIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The international relations office  of Koforidua Technical University can be reached on +233  0342293974"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )      
+        
+class KtuLaisonOfficeContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuLaisonOfficeContactIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The laison office  of Koforidua Technical University can be reached on +233  0303961714"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )            
+            
+class KtuVcSecretariatOfficeContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuVcSecretariatOfficeContactIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The Vice chancellor secretariat office  of Koforidua Technical University can be reached on +233   0342293002"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )            
+            
 
 sb = SkillBuilder()
 
@@ -691,6 +795,12 @@ sb.add_request_handler(FbmsDepartmentIntentHandler())
 
 
 
+#<!-------------------BEGINNING OF KTU CONTACT INFO HANDLERS--------------------->
+sb.add_request_handler(KtuHelpDeskIntentHandler())
+sb.add_request_handler(KtuStudentServiceContactIntentHandler())
+sb.add_request_handler(KtuAdmissionOfficeContactIntentHandler())
+sb.add_request_handler(KtuInternationalRelationsOfficeContactIntentHandler())
+sb.add_request_handler(KtuLaisonOfficeContactIntentHandler())
 
 # Remember to not cross this skill builder
  

@@ -224,6 +224,22 @@
           ]
 
         },
+        {
+          "name": "KtuHelpDeskIntent",
+          "slots": [],
+          "samples": [
+            "contact Koforidua Technical University Help Desk",
+            "how can I contact Ktu help desk",
+            "what is the contact of ktu help desk",
+            "phone number of ktu help desk",
+            "ktu help desk contact number",
+            "how can i access help in ktu",
+            "ktu help desk",
+            "call number of ktu help desk"
+
+          ]
+
+        },
 
         {
           "name": "AMAZON.FallbackIntent",

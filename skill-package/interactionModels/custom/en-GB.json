@@ -288,6 +288,25 @@
         },
 
         {
+          "name": "KtuLaisonOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University laison office",
+            "how can i contact ktu laison or attachment office",
+            "contact information of ktu attachment office",
+            "contact information of ktu internship office",
+            "phone number of ktu laison  office",
+            "phone number of ktu attachment  office",
+            "laison office of ktu",
+            "attachment office of ktu",
+            "how can i call laison office",
+            "phone number of ktu laison office"
+            
+          ]
+
+        },
+
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }

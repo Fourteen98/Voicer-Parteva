@@ -240,6 +240,21 @@
           ]
 
         },
+        {
+          "name": "KtuStudentServiceContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University Student service deparmetn",
+            "how can i contact ktu student service department",
+            "contact information of ktu student service deparment",
+            "phone number of ktu student service department",
+            "how should i call ktu student service department",
+            "does ktu have student service department"
+            
+          ]
+
+        },
+
 
         {
           "name": "AMAZON.FallbackIntent",

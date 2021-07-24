@@ -442,6 +442,23 @@ class KtuHelpDeskIntentHandler(AbstractRequestHandler):
                 .response
         )              
 
+class KtuStudentServiceContactIntentHandler(AbstractRequestHandler):
+    
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("KtuStudentServiceContactIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        speak_output = "The student service   of Koforidua Technical University can be reached on is 	+233  034 229 0311"
+        
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        )     
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
@@ -471,6 +488,7 @@ sb.add_request_handler(FutureOfVoicerIntentHandler())
 
 #<!-------------------BEGINNING OF KTU CONTACT INFO HANDLERS--------------------->
 sb.add_request_handler(KtuHelpDeskIntentHandler())
+sb.add_request_handler(KtuStudentServiceContactIntentHandler())
 
 
 # Remember to not cross this skill builder

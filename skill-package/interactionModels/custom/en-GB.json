@@ -147,6 +147,7 @@
             "student population of ktu"
           ]
         },
+
         {
           "name": "AboutVoicerIntent",
           "slots": [],
@@ -169,6 +170,7 @@
             "how smart is voicer parteva"
           ]
         },
+
         {
           "name": "CodeNameIntent",
           "slots": [],
@@ -180,6 +182,7 @@
             "codename"
           ]
         },
+
         {
           "name": "VoicerSupervisorIntent",
           "slots": [],
@@ -216,6 +219,7 @@
           ]
         },
         {
+
           "name": "KtuRegistrarNameIntent",
           "slots": [],
           "samples": [
@@ -239,6 +243,141 @@
         },
 
 
+
+          "name": "KtuUniversityTypeIntent",
+          "slots": [],
+          "samples": [
+            "What type of university is ktu",
+            "ktu university type",
+            "is ktu a traditional university",
+            "is ktu a technical university ",
+            "what type of university is Koforidua Technical University",
+            "is ktu a traditional university"
+          ]
+
+        },
+        
+        {
+          "name": "KtuAthleticsInformationIntent",
+          "slots": [],
+          "samples": [
+            "What are the types of athletics game in ktu",
+            "what are the sports in koforidua technical university",
+            "athletics in koforidua technical university",
+            "ktu athletics",
+            "ktu sports",
+            "sports in koforidua technical university",
+            "what ktu sports is best"
+          ]
+
+        },
+
+        {
+          "name": "KtuVisionIntent",
+          "slots": [],
+          "samples": [
+            "What is the vision of Koforidua Technical University",
+            "what is the vision of ktu",
+            "ktu vision",
+            "vision of koforidua technical university",
+            "does koforidua technical university have a vision",
+            "what is the aim of koforidua technical university",
+            "aim of Koforidua Technical University"
+          ]
+
+        },
+        
+        {
+          "name": "KtuMissionIntent",
+          "slots": [],
+          "samples": [
+            "What is the mission  of Koforidua Technical University",
+            "what is the mission  of ktu",
+            "ktu mission",
+            "mission of koforidua technical university",
+            "does koforidua technical university have a mission"
+            
+          ]
+
+        },
+
+        {
+          "name": "KtuCoreValuesIntent",
+          "slots": [],
+          "samples": [
+            "What are the core values of Koforidua Technical University",
+            "What is the core values of Koforidua Technical University",
+            "core values of ktu",
+            "name the core values of Koforidua Technical University",
+            "mention the core  of koforidua technical university"  
+          ]
+
+        },
+
+          "name": "LargestFacultyIntent",
+          "slots" : [],
+          "samples": [
+            "What is the largest faculty in ktu",
+            "what is the largest faculty in koforidua technical university",
+            "what is the biggest faculty in koforidua technical university", 
+            "what is the biggest faculty in ktu",
+            "which faculty is the biggest in the school",
+            "which faculty is the biggest in the university",
+            "which faculty is the largest in the school",
+            "which faculty is the largest in the university", 
+            "is FBMS the largest faculty"
+          ]
+        },
+        {
+          "name": "AboutFbmsIntent",
+          "slots": [],
+          "samples": [
+            "what is fbms",
+            "what is faculty of business and management studies",
+            "Tell me about fbms",
+            "Tell me about faculty of business and management studies",
+            "fbms",
+            "faculty of business and management studies"
+
+
+
+          ]
+        },
+        {
+          "name": "FbmsVisionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Vision statement of fbms",
+            "what is the Vision statement of faculty of business and management studies",
+            "Vision statement of the fbms",
+            "Vision statement of faculty of business and management studies"
+          ]
+        },
+        {
+          "name": "FbmsMissionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Mission statement of fbms",
+            "what is the Mission statement of faculty of business and management studies",
+            "Mission statement of the fbms",
+            "Mission statement of faculty of business and management studies"
+          ]
+
+        },
+        {
+          "name": "FbmsDepartmentIntent",
+          "slots": [],
+          "samples": [
+            "How many department are in fbms",
+            "How many department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies",
+            "How many academic department are in fbms",
+            "How many academic department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies"
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []
@@ -247,5 +386,9 @@
       "types": []
     }
   },
+
   "version": "6"
 }
+  "version": "2"
+}
+

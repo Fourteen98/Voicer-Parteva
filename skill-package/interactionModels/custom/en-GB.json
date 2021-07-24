@@ -271,6 +271,21 @@
 
         },
 
+        {
+          "name": "KtuInternationalRelationsOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University international relations office",
+            "how can i contact ktu international relations office",
+            "contact information of ktu international relations office",
+            "phone number of ktu international relations  office",
+            "international relations office of ktu",
+            "how can i call ktu international relations office",
+            "phone number of ktu international relations office"
+            
+          ]
+
+        },
 
         {
           "name": "AMAZON.FallbackIntent",

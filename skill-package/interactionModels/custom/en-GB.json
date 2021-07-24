@@ -241,7 +241,7 @@
             "Head of Department of student services of Koforidua Technical University"
           ]
         },
-
+      {
 
 
           "name": "KtuUniversityTypeIntent",
@@ -256,7 +256,7 @@
           ]
 
         },
-        
+
         {
           "name": "KtuAthleticsInformationIntent",
           "slots": [],
@@ -271,7 +271,6 @@
           ]
 
         },
-
         {
           "name": "KtuVisionIntent",
           "slots": [],
@@ -328,7 +327,6 @@
           ]
 
         },
-
         {
           "name": "KtuCoreValuesIntent",
           "slots": [],
@@ -359,7 +357,7 @@
           ]
 
         },
-
+      {
           "name": "LargestFacultyIntent",
           "slots" : [],
           "samples": [
@@ -487,6 +485,5 @@
 
   "version": "6"
 }
-  "version": "2"
-}
+  
 

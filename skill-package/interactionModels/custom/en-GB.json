@@ -72,7 +72,6 @@
             "tell me about the vc of ktu"
           ]
         },
-
         {
           "name": "KtuWebsiteIntent",
           "slots": [],
@@ -90,7 +89,6 @@
             "ktu is the main website of Ktu"
           ]
         },
-
         {
           "name": "KtuEstablishedIntent",
           "slots": [],
@@ -110,7 +108,6 @@
             "who owns ktu"
           ]
         },
-
         {
           "name": "KtuMottoIntent",
           "slots": [],
@@ -124,7 +121,6 @@
             "does ktu have a motto"
           ]
         },
-
         {
           "name": "KtuLocationIntent",
           "slots": [],
@@ -138,7 +134,6 @@
             "where of Koforidua Polythecnic "
           ]
         },
-
         {
           "name": "KtuPopulationIntent",
           "slots": [],
@@ -190,27 +185,24 @@
           "slots": [],
           "samples": [
             "Who supervised the creation of voicer",
-            "who is the supervisor of voicer", 
+            "who is the supervisor of voicer",
             "who supervised the development of voicer",
             "who is the supervisor of voicer"
           ]
-
         },
         {
-          "name": "TripleCInfoIntent", 
+          "name": "TripleCInfoIntent",
           "slots": [],
           "samples": [
             "Who is your creator",
             "Who are your creator",
             "Who created you",
-            "who created voicer", 
-            "Who created ktu voicer", 
-            "Who are the Triple C's",
+            "who created voicer",
+            "Who created ktu voicer",
+            "Who are the Triple C\u0027s",
             "Who are the Triple C",
-            "Who is the Triple C's",
+            "Who is the Triple C\u0027s",
             "Who is the Triple C"
-
-
           ]
         },
         {
@@ -222,9 +214,7 @@
             "Where will you be some years to come",
             "Where will you be in some few years "
           ]
-
         },
-
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []
@@ -233,5 +223,5 @@
       "types": []
     }
   },
-  "version": "2"
+  "version": "6"
 }

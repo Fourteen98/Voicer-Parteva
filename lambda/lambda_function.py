@@ -178,11 +178,11 @@ class AboutVoicerIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = " Voicer Parteva is a codename for Voicer KTU. I speak on behalf of Koforidua Technical University"
-        " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
-        " I was created by the Triple C group as a project for their end of HND Computer Science." 
-        " I am a smart voice assistant for KTU. I will boost the image of KTU using my AI and"
-        " Machine Learning models as a student interactive Voice assistance. "
-        " Kudos to the Triple C group who created me and their supervisor Mr. Collins Collinson"
+        + " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
+        + " I was created by the Triple C group as a project for their end of HND Computer Science." 
+        + " I am a smart voice assistant for KTU. I will boost the image of KTU using my AI and"
+        + " Machine Learning models as a student interactive Voice assistance. "
+        + " Kudos to the Triple C group who created me and their supervisor Mr. Collins Collinson"
 
         return (
             handler_input.response_builder
@@ -200,8 +200,8 @@ class WhyCreateVoicerIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = " I was created by the Triple C's to act as a digital friend and a student companion, " 
-        " answering questions, providing feedback and advice. I am able to answer both simple and complex conversations"
-        " to assist student in navigating their campus and academic life."
+        + " answering questions, providing feedback and advice. I am able to answer both simple and complex conversations"
+        + " to assist student in navigating their campus and academic life."
 
         return (
             handler_input.response_builder
@@ -253,8 +253,8 @@ class VoicerSupervisorIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Mr Collins Collinson is the supervisor of voicer." 
-        " He is a programming Lecturer in Koforidua Technical University and the examination officer for the"
-        " computer science department. He is more like a Dad to my creators."
+        + " He is a programming Lecturer in Koforidua Technical University and the examination officer for the"
+        + " computer science department. He is more like a Dad to my creators."
 
         return (
             handler_input.response_builder
@@ -297,7 +297,7 @@ class KtuSrcPresidentIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Victor Togoh is the current SRC President of KtU. He is a final year student in the accountancy " 
-        " department of KTU. And his vice is Kwesi Manful, a final year student of the computer science deparment of ktu "
+        + " department of KTU. And his vice is Kwesi Manful, a final year student of the computer science deparment of ktu "
         
 
         return (
@@ -317,10 +317,10 @@ class KtuViceChancellorIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Professor David Kofi Essumang is the current vice chancellor of KTU. Prof. Essumang holds a Doctor of Philosophy (PhD) in"
-        " Environmental Chemistry from the Aalborg University of Denmark and a Master of Philosophy (M. Phil) in Chemistry, "
-        " as well as B.Sc in Chemistry and Diploma in Education from the University of Cape Coast. He had his secondary school"
-        " education at Agona Nsaba Presbyterian Secondary School and St. Augustine’s College, Cape Coast for the ‘O’ and ‘A’ "
-        " Level Certificates respectively."
+        + " Environmental Chemistry from the Aalborg University of Denmark and a Master of Philosophy (M. Phil) in Chemistry, "
+        + " as well as B.Sc in Chemistry and Diploma in Education from the University of Cape Coast. He had his secondary school"
+        + " education at Agona Nsaba Presbyterian Secondary School and St. Augustine’s College, Cape Coast for the ‘O’ and ‘A’ "
+        + " Level Certificates respectively."
         
 
         return (

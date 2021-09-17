@@ -147,6 +147,7 @@
             "student population of ktu"
           ]
         },
+
         {
           "name": "AboutVoicerIntent",
           "slots": [],
@@ -169,6 +170,7 @@
             "how smart is voicer parteva"
           ]
         },
+
         {
           "name": "CodeNameIntent",
           "slots": [],
@@ -180,6 +182,7 @@
             "codename"
           ]
         },
+
         {
           "name": "VoicerSupervisorIntent",
           "slots": [],
@@ -214,7 +217,265 @@
             "Where will you be some years to come",
             "Where will you be in some few years "
           ]
+<<<<<<< HEAD
+=======
         },
+        {
+
+          "name": "KtuRegistrarNameIntent",
+          "slots": [],
+          "samples": [
+            "What is the name of the Registrar of ktu",
+            "Who is the registrar of Koforidua Technical University",
+            "ktu registrar name",
+            "Does ktu have a reigstrar",
+            "registrar of Koforidua Technical University"
+          ]
+        },
+        {
+          "name": "KtuHodStudentServiceIntent",
+          "slots": [],
+          "samples": [
+            "What is the name of head of department of student service of KTU",
+            "Who is the head of department of student service of Koforidua Technical University",
+            "Does Ktu have head of department of student services",
+            "Who is the HOD of student service",
+            "Head of Department of student services of Koforidua Technical University"
+          ]
+        },
+      {
+
+
+          "name": "KtuUniversityTypeIntent",
+          "slots": [],
+          "samples": [
+            "What type of university is ktu",
+            "ktu university type",
+            "is ktu a traditional university",
+            "is ktu a technical university ",
+            "what type of university is Koforidua Technical University",
+            "is ktu a traditional university"
+          ]
+
+>>>>>>> a15911a45378f3d4e66879c355f11872490ff7e8
+        },
+        {
+          "name": "KtuAthleticsInformationIntent",
+          "slots": [],
+          "samples": [
+            "What are the types of athletics game in ktu",
+            "what are the sports in koforidua technical university",
+            "athletics in koforidua technical university",
+            "ktu athletics",
+            "ktu sports",
+            "sports in koforidua technical university",
+            "what ktu sports is best"
+          ]
+
+        },
+        {
+          "name": "KtuVisionIntent",
+          "slots": [],
+          "samples": [
+            "What is the vision of Koforidua Technical University",
+            "what is the vision of ktu",
+            "ktu vision",
+            "vision of koforidua technical university",
+            "does koforidua technical university have a vision",
+            "what is the aim of koforidua technical university",
+            "aim of Koforidua Technical University"
+          ]
+
+
+        {
+          "name": "KtuHelpDeskIntent",
+          "slots": [],
+          "samples": [
+            "contact Koforidua Technical University Help Desk",
+            "how can I contact Ktu help desk",
+            "what is the contact of ktu help desk",
+            "phone number of ktu help desk",
+            "ktu help desk contact number",
+            "how can i access help in ktu",
+            "ktu help desk",
+            "call number of ktu help desk"
+
+          ]
+
+        },
+        {
+          "name": "KtuStudentServiceContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University Student service deparmetn",
+            "how can i contact ktu student service department",
+            "contact information of ktu student service deparment",
+            "phone number of ktu student service department",
+            "how should i call ktu student service department",
+            "does ktu have student service department"
+            
+=======
+        
+        {
+          "name": "KtuMissionIntent",
+          "slots": [],
+          "samples": [
+            "What is the mission  of Koforidua Technical University",
+            "what is the mission  of ktu",
+            "ktu mission",
+            "mission of koforidua technical university",
+            "does koforidua technical university have a mission"
+            
+          ]
+
+        },
+        {
+          "name": "KtuCoreValuesIntent",
+          "slots": [],
+          "samples": [
+            "What are the core values of Koforidua Technical University",
+            "What is the core values of Koforidua Technical University",
+            "core values of ktu",
+            "name the core values of Koforidua Technical University",
+            "mention the core  of koforidua technical university"  
+
+          ]
+
+        },
+
+
+        {
+          "name": "KtuAdmissionOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University admission office",
+            "how can i contact ktu admission office",
+            "contact information of ktu admission office",
+            "phone number of ktu admission office",
+            "admission of ktu",
+            "how can i call ktu admission office",
+            "phone number of ktu admission office"
+            
+          ]
+
+        },
+      {
+          "name": "LargestFacultyIntent",
+          "slots" : [],
+          "samples": [
+            "What is the largest faculty in ktu",
+            "what is the largest faculty in koforidua technical university",
+            "what is the biggest faculty in koforidua technical university", 
+            "what is the biggest faculty in ktu",
+            "which faculty is the biggest in the school",
+            "which faculty is the biggest in the university",
+            "which faculty is the largest in the school",
+            "which faculty is the largest in the university", 
+            "is FBMS the largest faculty"
+          ]
+        },
+        {
+          "name": "AboutFbmsIntent",
+          "slots": [],
+          "samples": [
+            "what is fbms",
+            "what is faculty of business and management studies",
+            "Tell me about fbms",
+            "Tell me about faculty of business and management studies",
+            "fbms",
+            "faculty of business and management studies"
+
+
+
+
+          ]
+        },
+        {
+          "name": "FbmsVisionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Vision statement of fbms",
+            "what is the Vision statement of faculty of business and management studies",
+            "Vision statement of the fbms",
+            "Vision statement of faculty of business and management studies"
+          ]
+        },
+        {
+          "name": "FbmsMissionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Mission statement of fbms",
+            "what is the Mission statement of faculty of business and management studies",
+            "Mission statement of the fbms",
+            "Mission statement of faculty of business and management studies"
+          ]
+
+        },
+        {
+          "name": "FbmsDepartmentIntent",
+          "slots": [],
+          "samples": [
+            "How many department are in fbms",
+            "How many department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies",
+            "How many academic department are in fbms",
+            "How many academic department in faculty of business and management studies",
+            "what is the number of department in fbms",
+            "what is the number of department in faculty of business and management studies"
+          ]
+        },
+        {
+          "name": "KtuInternationalRelationsOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University international relations office",
+            "how can i contact ktu international relations office",
+            "contact information of ktu international relations office",
+            "phone number of ktu international relations  office",
+            "international relations office of ktu",
+            "how can i call ktu international relations office",
+            "phone number of ktu international relations office"
+            
+          ]
+
+        },
+
+        {
+          "name": "KtuLaisonOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University laison office",
+            "how can i contact ktu laison or attachment office",
+            "contact information of ktu attachment office",
+            "contact information of ktu internship office",
+            "phone number of ktu laison  office",
+            "phone number of ktu attachment  office",
+            "laison office of ktu",
+            "attachment office of ktu",
+            "how can i call laison office",
+            "phone number of ktu laison office"
+            
+          ]
+
+        },
+
+        {
+          "name": "KtuVcSecretariatOfficeContactIntent",
+          "slots": [],
+          "samples": [
+            "what is the contact of Koforidua Technical University vice chancellor secretariat  office",
+            "how can i contact ktu VC secretariat  office",
+            "contact information of ktu VC secretariat  office",
+            "phone number of ktu VC secretariat  office",
+            "vice chancellor secretariat  office of ktu",
+            "how can i call ktu vice chancellor secretariat  office",
+            "phone number of ktu vice chancellor secretariat  office"
+            
+          ]
+
+        },
+        
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []
@@ -223,5 +484,13 @@
       "types": []
     }
   },
+<<<<<<< HEAD
   "version": "6"
 }
+=======
+
+  "version": "6"
+}
+  
+
+>>>>>>> a15911a45378f3d4e66879c355f11872490ff7e8

@@ -219,45 +219,6 @@
           ]
         },
         {
-
-          "name": "KtuRegistrarNameIntent",
-          "slots": [],
-          "samples": [
-            "What is the name of the Registrar of ktu",
-            "Who is the registrar of Koforidua Technical University",
-            "ktu registrar name",
-            "Does ktu have a reigstrar",
-            "registrar of Koforidua Technical University"
-          ]
-        },
-        {
-          "name": "KtuHodStudentServiceIntent",
-          "slots": [],
-          "samples": [
-            "What is the name of head of department of student service of KTU",
-            "Who is the head of department of student service of Koforidua Technical University",
-            "Does Ktu have head of department of student services",
-            "Who is the HOD of student service",
-            "Head of Department of student services of Koforidua Technical University"
-          ]
-        },
-      {
-
-
-          "name": "KtuUniversityTypeIntent",
-          "slots": [],
-          "samples": [
-            "What type of university is ktu",
-            "ktu university type",
-            "is ktu a traditional university",
-            "is ktu a technical university ",
-            "what type of university is Koforidua Technical University",
-            "is ktu a traditional university"
-          ]
-
-        },
-
-        {
           "name": "KtuAthleticsInformationIntent",
           "slots": [],
           "samples": [
@@ -283,6 +244,7 @@
             "what is the aim of koforidua technical university",
             "aim of Koforidua Technical University"
           ]
+
         },
         {
           "name": "KtuHelpDeskIntent",
@@ -310,7 +272,10 @@
             "how should i call ktu student service department",
             "does ktu have student service department"
           ]
+
+            
         },
+        
         {
           "name": "KtuMissionIntent",
           "slots": [],
@@ -512,8 +477,5 @@
       "types": []
     }
   },
-
   "version": "6"
 }
-  
-

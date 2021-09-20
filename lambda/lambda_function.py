@@ -27,7 +27,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
 
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
-        speak_output = "Welcome, you can say Hello or Help. Which would you like to try?"
+        speak_output = "Welcome, I am Voicer. An Alexa skills app for Koforidua Technical University?"
 
         return (
             handler_input.response_builder
@@ -179,11 +179,11 @@ class AboutVoicerIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         
         speak_output = " Voicer Parteva is a codename for Voicer KTU. I speak on behalf of Koforidua Technical University"
-        " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
-        " I was created by the Triple C group as a project for their end of HND Computer Science." 
-        " I am a smart voice assistant for KTU. I will boost the image of KTU using my AI and"
-        " Machine Learning models as a student interactive Voice assistance. "
-        " Kudos to the Triple C group who created me and their supervisor Mr. Collins Collinson"
+        + " that is why I am called Voicer,but for Parteva it is a codename used by my creators.  "
+        + " I was created by the Triple C group as a project for their end of HND Computer Science." 
+        + " I am a smart voice assistant for KTU. I will boost the image of KTU using my AI and"
+        + " Machine Learning models as a student interactive Voice assistance. "
+        + " Kudos to the Triple C group who created me and their supervisor Mr. Collins Collinson"
 
         return (
             handler_input.response_builder
@@ -201,8 +201,8 @@ class WhyCreateVoicerIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = " I was created by the Triple C's to act as a digital friend and a student companion, " 
-        " answering questions, providing feedback and advice. I am able to answer both simple and complex conversations"
-        " to assist student in navigating their campus and academic life."
+        + " answering questions, providing feedback and advice. I am able to answer both simple and complex conversations"
+        + " to assist student in navigating their campus and academic life."
 
         return (
             handler_input.response_builder
@@ -298,7 +298,7 @@ class KtuSrcPresidentIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Victor Togoh is the current SRC President of KtU. He is a final year student in the accountancy " 
-        " department of KTU. And his vice is Kwesi Manful, a final year student of the computer science deparment of ktu "
+        + " department of KTU. And his vice is Kwesi Manful, a final year student of the computer science deparment of ktu "
         
 
         return (
@@ -318,10 +318,10 @@ class KtuViceChancellorIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Professor David Kofi Essumang is the current vice chancellor of KTU. Prof. Essumang holds a Doctor of Philosophy (PhD) in"
-        " Environmental Chemistry from the Aalborg University of Denmark and a Master of Philosophy (M. Phil) in Chemistry, "
-        " as well as B.Sc in Chemistry and Diploma in Education from the University of Cape Coast. He had his secondary school"
-        " education at Agona Nsaba Presbyterian Secondary School and St. Augustine’s College, Cape Coast for the ‘O’ and ‘A’ "
-        " Level Certificates respectively."
+        + " Environmental Chemistry from the Aalborg University of Denmark and a Master of Philosophy (M. Phil) in Chemistry, "
+        + " as well as B.Sc in Chemistry and Diploma in Education from the University of Cape Coast. He had his secondary school"
+        + " education at Agona Nsaba Presbyterian Secondary School and St. Augustine’s College, Cape Coast for the ‘O’ and ‘A’ "
+        + " Level Certificates respectively."
         
 
         return (
@@ -435,6 +435,14 @@ class KtuUniversityTypeIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speak_output = "Koforidua Technical University is a technical univesity among the 10 technical universites in Ghana,"
         + " it is not a traditional university."
+        
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+        ) 
+        
 
 # FBMS Information Handlers can be found here
 #<-------------------------------------------->
@@ -469,6 +477,11 @@ class KtuAthleticsInformationIntentHandler(AbstractRequestHandler):
         speak_output = "Football, Basketball, Volleyball and Tennis are the sports interested students in"
         + " Koforidua Technical University"
 
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
          return (
             handler_input.response_builder
@@ -510,6 +523,12 @@ class KtuVisionIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speak_output = "To be a Reference Point for World-Class Science and Technology Education and Applied Research"
 
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
+
 
          return (
             handler_input.response_builder
@@ -549,8 +568,9 @@ class KtuMissionIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "To provide tertiary level technical education through the development of carrier-focused skills in collaboration with industry"
-
+          
          return (
+
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
@@ -596,7 +616,9 @@ class KtuCoreValuesIntentHandler(AbstractRequestHandler):
         +" second is Integrity. Integrity means original and sincere in all we think and do. Last core value is impact."
         +" impact means bringing desirable change to the larger community" 
 
+
          return (
+
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
@@ -623,9 +645,7 @@ class FbmsDepartmentIntentHandler(AbstractRequestHandler):
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
-                .response
-
-        )   
+                .response  
 
         
 
@@ -639,15 +659,16 @@ class KtuRegistrarNameIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Dr N.A Mensah-Livingstone is the registrar of Koforidua Technical University. The office"
-                      + " The Registrar’s Offices is headed by the Registrar, who is the University’s Chief Administrative+"
-                      + " Officer and Secretary to the Council of the University."        
+        + " The Registrar’s Offices is headed by the Registrar, who is the University’s Chief Administrative+"
+        + " Officer and Secretary to the Council of the University."        
 
         return (
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
-                .response
-        )              
+                .response  
+
+        )     
 
 
 

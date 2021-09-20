@@ -254,13 +254,8 @@ class VoicerSupervisorIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Mr Collins Collinson is the supervisor of voicer." 
-<<<<<<< HEAD
-        + " He is a programming Lecturer in Koforidua Technical University and the examination officer for the"
-        + " computer science department. He is more like a Dad to my creators."
-=======
         " He is a programming Lecturer in Koforidua Technical University and the examination officer for the" 
         " computer science department. He is more like a Dad to my creators."
->>>>>>> a15911a45378f3d4e66879c355f11872490ff7e8
 
         return (
             handler_input.response_builder
@@ -474,6 +469,11 @@ class KtuAthleticsInformationIntentHandler(AbstractRequestHandler):
         speak_output = "Football, Basketball, Volleyball and Tennis are the sports interested students in"
         + " Koforidua Technical University"
 
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
         ) 
              
@@ -507,6 +507,12 @@ class KtuVisionIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "To be a Reference Point for World-Class Science and Technology Education and Applied Research"
+
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
 
         ) 
@@ -542,6 +548,11 @@ class KtuMissionIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
         speak_output = "To provide tertiary level technical education through the development of carrier-focused skills in collaboration with industry"
 
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
         ) 
 
@@ -581,6 +592,11 @@ class KtuCoreValuesIntentHandler(AbstractRequestHandler):
         +" second is Integrity. Integrity means original and sincere in all we think and do. Last core value is impact."
         +" impact means bringing desirable change to the larger community" 
 
+        return (
+            handler_input.response_builder
+                .speak(speak_output)
+                # .ask("add a reprompt if you want to keep the session open for the user to respond")
+                .response
 
         ) 
 
@@ -602,9 +618,7 @@ class FbmsDepartmentIntentHandler(AbstractRequestHandler):
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
-                .response
-
-        )   
+                .response  
 
         ) 
 
@@ -618,15 +632,16 @@ class KtuRegistrarNameIntentHandler(AbstractRequestHandler):
     def handle(self, handler_input):
         # type: (HandlerInput) -> Response
         speak_output = "Dr N.A Mensah-Livingstone is the registrar of Koforidua Technical University. The office"
-                      + " The Registrar’s Offices is headed by the Registrar, who is the University’s Chief Administrative+"
-                      + " Officer and Secretary to the Council of the University."        
+        + " The Registrar’s Offices is headed by the Registrar, who is the University’s Chief Administrative+"
+        + " Officer and Secretary to the Council of the University."        
 
         return (
             handler_input.response_builder
                 .speak(speak_output)
                 # .ask("add a reprompt if you want to keep the session open for the user to respond")
-                .response
-        )              
+                .response  
+
+        )     
 
 
 

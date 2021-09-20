@@ -283,8 +283,7 @@
             "what is the aim of koforidua technical university",
             "aim of Koforidua Technical University"
           ]
-
-
+        },
         {
           "name": "KtuHelpDeskIntent",
           "slots": [],
@@ -299,7 +298,6 @@
             "call number of ktu help desk"
 
           ]
-
         },
         {
           "name": "KtuStudentServiceContactIntent",
@@ -311,9 +309,8 @@
             "phone number of ktu student service department",
             "how should i call ktu student service department",
             "does ktu have student service department"
-            
-=======
-        
+          ]
+        },
         {
           "name": "KtuMissionIntent",
           "slots": [],
@@ -325,7 +322,6 @@
             "does koforidua technical university have a mission"
             
           ]
-
         },
         {
           "name": "KtuCoreValuesIntent",
@@ -369,58 +365,53 @@
             "which faculty is the biggest in the university",
             "which faculty is the largest in the school",
             "which faculty is the largest in the university", 
-            "is FBMS the largest faculty"
+            "is fast the largest faculty"
           ]
         },
         {
-          "name": "AboutFbmsIntent",
+          "name": "AboutfastIntent",
           "slots": [],
           "samples": [
-            "what is fbms",
-            "what is faculty of business and management studies",
-            "Tell me about fbms",
-            "Tell me about faculty of business and management studies",
-            "fbms",
-            "faculty of business and management studies"
-
-
-
-
+            "what is fast",
+            "what is faculty of applied science and technology",
+            "Tell me about fast",
+            "Tell me about faculty of applied science and technology",
+            "fast",
+            "faculty of applied science and technology"
           ]
         },
         {
-          "name": "FbmsVisionStatementIntent",
+          "name": "fastVisionStatementIntent",
           "slots": [],
           "samples": [
-            "what is the Vision statement of fbms",
-            "what is the Vision statement of faculty of business and management studies",
-            "Vision statement of the fbms",
-            "Vision statement of faculty of business and management studies"
+            "what is the Vision statement of fast",
+            "what is the Vision statement of faculty of applied science and technology",
+            "Vision statement of the fast",
+            "Vision statement of faculty of applied science and technology"
           ]
         },
         {
-          "name": "FbmsMissionStatementIntent",
+          "name": "fastMissionStatementIntent",
           "slots": [],
           "samples": [
-            "what is the Mission statement of fbms",
-            "what is the Mission statement of faculty of business and management studies",
-            "Mission statement of the fbms",
-            "Mission statement of faculty of business and management studies"
+            "what is the Mission statement of fast",
+            "what is the Mission statement of faculty of applied science and technology",
+            "Mission statement of the fast",
+            "Mission statement of faculty of applied science and technology"
           ]
-
         },
         {
-          "name": "FbmsDepartmentIntent",
+          "name": "fastDepartmentIntent",
           "slots": [],
           "samples": [
-            "How many department are in fbms",
-            "How many department in faculty of business and management studies",
-            "what is the number of department in fbms",
-            "what is the number of department in faculty of business and management studies",
-            "How many academic department are in fbms",
-            "How many academic department in faculty of business and management studies",
-            "what is the number of department in fbms",
-            "what is the number of department in faculty of business and management studies"
+            "How many department are in fast",
+            "How many department in faculty of applied science and technology",
+            "what is the number of department in fast",
+            "what is the number of department in faculty of applied science and technology",
+            "How many academic department are in fast",
+            "How many academic department in faculty of applied science and technology",
+            "what is the number of department in fast",
+            "what is the number of department in faculty of applied science and technology"
           ]
         },
         {
@@ -436,28 +427,24 @@
             "phone number of ktu international relations office"
             
           ]
-
         },
 
         {
-          "name": "KtuLaisonOfficeContactIntent",
+          "name": "KtuLiaisonOfficeContactIntent",
           "slots": [],
           "samples": [
-            "what is the contact of Koforidua Technical University laison office",
-            "how can i contact ktu laison or attachment office",
+            "what is the contact of Koforidua Technical University liaison office",
+            "how can i contact ktu liaison or attachment office",
             "contact information of ktu attachment office",
             "contact information of ktu internship office",
-            "phone number of ktu laison  office",
+            "phone number of ktu liaison  office",
             "phone number of ktu attachment  office",
-            "laison office of ktu",
+            "liaison office of ktu",
             "attachment office of ktu",
-            "how can i call laison office",
-            "phone number of ktu laison office"
-            
+            "how can i call liaison office",
+            "phone number of ktu liaison office"
           ]
-
         },
-
         {
           "name": "KtuVcSecretariatOfficeContactIntent",
           "slots": [],
@@ -473,7 +460,50 @@
           ]
 
         },
-        
+        {
+          "name": "AboutFastIntent",
+          "slots" :[],
+          "samples":[
+            "what is fast",
+            "what is faculty of applied science and technology",
+            "tell me about fast",
+            "tell me about faculty of applied science and technology"
+          ]
+        },
+        {
+          "name": "AboutFastVisionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Vision statement of fast",
+            "what is the Vision statement of faculty of applied science and technology",
+            "Vision statement of the fast",
+            "Vision statement of faculty of applied science and technology"
+          ]
+        },{
+          "name": "AboutFastMissionStatementIntent",
+          "slots": [],
+          "samples": [
+            "what is the Mission statement of fast",
+            "what is the Mission statement of faculty of applied science and technology",
+            "Mission statement of the fast",
+            "Mission statement of faculty of applied science and technology"
+          ]
+        },
+        {
+          "name":"FastDepartmentIntent",
+          "slot": [],
+          "samples": [
+            "How many department are in fast",
+            "How many department in faculty of applied science and technology",
+            "what is the number of department in fast",
+            "what is the number of department in faculty of applied science and technology",
+            "How many academic department are in fast",
+            "How many academic department in faculty of applied science and technology",
+            "what is the number of department in fast",
+            "what is the number of department in faculty of applied science and technology"
+  
+          ]
+        },
         {
           "name": "AMAZON.FallbackIntent",
           "samples": []
